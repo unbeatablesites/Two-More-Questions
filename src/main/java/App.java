@@ -23,7 +23,7 @@ public class App {
 
         Scanner scan = new Scanner(System.in);
 
-        String input = scan.nextLine();
+        String input = scan.nextLine().toLowerCase();
 
         try {
             Thread.sleep(2000);
@@ -35,9 +35,9 @@ public class App {
 
         System.out.println("Question 2) Is it a living thing?");
 
-        String input2 = scan.nextLine();
+        String input2 = scan.nextLine().toLowerCase();
 
-        if(input.equals("outside") && input2.equals("alive")){
+        if(input.equals("inside") && input2.equals("yes")){
             System.out.println("Then what else could you be thinking of besides a python?!?\n");
         }
 
