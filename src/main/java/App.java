@@ -21,7 +21,9 @@ public class App {
 
         System.out.println("Question 1) Does it stay inside or outside or both?");
 
-        Scanner input = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
+
+        String input = scan.nextLine();
 
         try {
             Thread.sleep(2000);
@@ -29,9 +31,11 @@ public class App {
             e.printStackTrace();
         }
 
+
+
         System.out.println("Question 2) Is it a living thing?");
 
-        Scanner input2 = new Scanner(System.in);
+        String input2 = scan.nextLine();
 
         if(input.equals("outside") && input2.equals("alive")){
             System.out.println("Then what else could you be thinking of besides a python?!?\n");
