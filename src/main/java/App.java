@@ -35,6 +35,10 @@ public class App {
             System.out.println("Then what else could you be thinking of besides a python?!?\n");
         }
 
+        if(input.equals("inside") && input2.equals("no")){
+            System.out.println("Then what else could you be thinking of besides a python?!?\n");
+        }
+
     }
 
     public static void doLogicForOutside(){
