@@ -25,13 +25,6 @@ public class App {
 
         String input = scan.nextLine().toLowerCase();
 
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-
 
         System.out.println("Question 2) Is it a living thing?");
 
