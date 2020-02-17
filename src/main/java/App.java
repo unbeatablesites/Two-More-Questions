@@ -60,7 +60,7 @@ public class App {
         }
 
         if(input.equals("no")){
-            System.out.println("Then what else could you be thinking of besides a \tshower curtain?!?\n");
+            System.out.println("Then what else could you be thinking of besides a billboard?!?\n");
         }
 
     }
