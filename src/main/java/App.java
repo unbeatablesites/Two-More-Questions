@@ -3,13 +3,7 @@ import java.util.Scanner;
 public class App {
 
     public static void main(String[] args) {
-        doLogicForInside();
-        doLogicForOutside();
-        doLogicForBoth();
-    }
-
-
-    public static void doLogicForInside(){
+        Scanner scan = new Scanner(System.in);
 
         System.out.println("TWO MORE QUESTIONS, BABY!\n" +
                 "\n" +
@@ -23,13 +17,28 @@ public class App {
 
         System.out.println("Question 1) Does it stay inside or outside or both?");
 
-        Scanner scan = new Scanner(System.in);
 
         String input = scan.nextLine().toLowerCase();
 
         System.out.println("Question 2) Is it a living thing? yes or no?");
 
         String input2 = scan.nextLine().toLowerCase();
+
+        doLogicForInside();
+        doLogicForOutside();
+        doLogicForBoth();
+    }
+
+
+    public static void askQuestion(){
+
+
+    }
+
+
+    public static void doLogicForInside(){
+
+
 
         if(input.equals("inside") && input2.equals("yes")){
             System.out.println("Then what else could you be thinking of besides a python?!?\n");
