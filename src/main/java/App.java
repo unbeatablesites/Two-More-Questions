@@ -66,7 +66,7 @@ public class App {
         if(input.equals("outside") && input2.equals("yes")){
             System.out.println("Then what else could you be thinking of besides a python?!?\n");
         }
-        if(input.equals("inside") && input2.equals("no")){
+        if(input.equals("outside") && input2.equals("no")){
             System.out.println("Then what else could you be thinking of besides a python?!?\n");
         }
 
