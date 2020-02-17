@@ -66,6 +66,9 @@ public class App {
         if(input.equals("outside") && input2.equals("yes")){
             System.out.println("Then what else could you be thinking of besides a python?!?\n");
         }
+        if(input.equals("inside") && input2.equals("no")){
+            System.out.println("Then what else could you be thinking of besides a python?!?\n");
+        }
 
     }
 
@@ -91,7 +94,10 @@ public class App {
 
         String input2 = scan.nextLine().toLowerCase();
 
-        if(input.equals("inside") && input2.equals("yes")){
+        if(input.equals("both") && input2.equals("yes")){
+            System.out.println("Then what else could you be thinking of besides a python?!?\n");
+        }
+        if(input.equals("both") && input2.equals("no")){
             System.out.println("Then what else could you be thinking of besides a python?!?\n");
         }
 
