@@ -19,11 +19,35 @@ public class App {
 
         if(input.equals("inside")){
         doLogicForInside();
-        }if(input.equals("outside")){
+        }
+
+        else if(input.equals("outside")){
         doLogicForOutside();
-        }if(input.equals("both"))
+        }
+
+        else if(input.equals("both"))
         doLogicForBoth();
-    }
+
+        else{
+
+            System.out.println("You did not enter a correct response the app ");
+
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            args = new String[0];
+            main(args);
+        }
+
+        }
+
+
+
+
+
+
 
     public static void doLogicForInside(){
         Scanner scan = new Scanner(System.in);
@@ -34,9 +58,8 @@ public class App {
         }
 
         if(input.equals("no")){
-            System.out.println("Then what else could you be thinking of besides a \tshower curtain?!?\n");
+            System.out.println("Then what else could you be thinking of besides a shower curtain?!?\n");
             }
-
         }
 
     public static void doLogicForOutside(){
@@ -51,7 +74,6 @@ public class App {
         if(input.equals("no")){
             System.out.println("Then what else could you be thinking of besides a billboard?!?\n");
         }
-
     }
 
     public static void doLogicForBoth(){
@@ -66,8 +88,5 @@ public class App {
         if(input.equals("no")){
             System.out.println("Then what else could you be thinking of besides a cell phone?!?\n");
         }
-
     }
-
-
 }
